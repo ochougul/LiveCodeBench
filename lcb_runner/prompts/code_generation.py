@@ -2,9 +2,11 @@ import json
 
 try:
     from anthropic import HUMAN_PROMPT, AI_PROMPT
-except ImportError:
-    HUMAN_PROMPT = None
-    AI_PROMPT = None
+except (ImportError, AttributeError):
+    # These legacy constants were removed from modern anthropic SDKs. They
+    # are only used by Claude prompt styles, not the Qwen ReapBase path.
+    HUMAN_PROMPT = ""
+    AI_PROMPT = ""
 
 from transformers import AutoTokenizer
 

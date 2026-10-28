@@ -702,6 +702,13 @@ LanguageModelList: list[LanguageModel] = [
         link="https://huggingface.co/Qwen/Qwen3-30B-A3B",
     ),
     LanguageModel(
+        "Qwen/Qwen3.8-Flash-Next-FP8",
+        "Qwen3.8-Flash-Next-FP8",
+        LMStyle.ReapBase,
+        datetime(2026, 1, 1),
+        link="https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8",
+    ),
+    LanguageModel(
         "meta-llama/Llama-4-Scout-17B-16E-Instruct",
         "Llama-4-Scout-17B-16E-Instruct",
         LMStyle.ReapBase,
